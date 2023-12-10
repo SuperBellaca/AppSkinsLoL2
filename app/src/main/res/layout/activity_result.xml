@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo5"
+    tools:context=".ResultActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/MainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/KaisaTintaSombriaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_rounded"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:id="@+id/KaisaTintaSombriaImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="KaisaTintaSombria"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/kaisa" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/Kaisa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="Kai'Sa Tinta Sombría \n-30% 1350 -> 945 RP"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/EzrealGallardoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/background_rounded"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:id="@+id/EzrealGallardoImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ezreal" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/Ezreal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="Ezreal Gallardo\n-45% 750 -> 412 RP"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/RakanPactoQuebrantadoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/background_rounded"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:id="@+id/RakanPactoQuebrantadoImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="AstroNautilus"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rakan" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/RakanPactotxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="Rakan Pacto Quebrantado\n-27% 1350 -> 985 RP"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/NeekoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/background_rounded"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView5"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:id="@+id/NeekoGuardianaImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="AstroNautilus"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/neeko2" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/NeekoGuardianatxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="Neeko Guardiana Estelar\n-60% 1350 -> 540 RP"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/AstroNautilusLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/background_rounded"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:id="@+id/NautiliusImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="AstroNautilus"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nautilius" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/astroNautilustxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="AstroNautilus\n-55% 1350 -> 607 RP"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/AniviaPrehistoricaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/background_rounded"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView6"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:id="@+id/AniviaPrehistoricaImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="AstroNautilus"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/anivia" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/Aniviatxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="Anivia Prehistórica\n-45% 750 -> 412 RP"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TahmKenchLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/background_rounded"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView7"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:id="@+id/tahmKenchImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="AstroNautilus"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tahm" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/Tahmkenchtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="Tahm Kench Master Chef\n-32% 975 -> 663 RP"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/NunuyWillumpLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_rounded"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView8"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:id="@+id/NunuyWillumpImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="AstroNautilus"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nun3" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/NunuyWillumptxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="Nunu y Willump Demoledor\n-15% 750 -> 604 RP"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MaestroYiLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_rounded"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView9"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:id="@+id/MaestroYiImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="AstroNautilus"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/yi" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/MaestroYitxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="Maestro Yi PsyOps\n-32% 1350 -> 918 RP"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/JayceAcedemiaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_rounded"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView10"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:id="@+id/JayceAcademiaImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="AstroNautilus"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jayce" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/JayceAcademiaCombatetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="Jayce Academia de Combate\n-40% 1350 -> 810 RP"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

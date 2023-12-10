@@ -5,7 +5,7 @@
     android:id="@+id/nose"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@drawable/fondo3"
     tools:context=".MainActivity"
     >
 
@@ -16,7 +16,6 @@
         tools:layout_editor_absoluteY="16dp">
 
         <LinearLayout
-            android:id="@+id/buscar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -26,51 +25,55 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
                 android:orientation="horizontal">
-                <Button
-                    android:id="@+id/btnMain"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ofertas"
-                    android:layout_marginLeft="10dp"
-                    />
+
 
                 <Button
                     android:id="@+id/btnParche"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Parche"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp"/>
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="15dp"/>
 
                 <Button
                     android:id="@+id/btnNotificaciones"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Notificaciones"
-                    android:layout_marginRight="10dp"/>
+                    android:layout_marginRight="25dp"
+                    android:text="Notificaciones" />
 
                 <ImageButton
-                    android:id="@+id/btnCerrarSesion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    android:id="@+id/btnPerfil"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iconoperfil"
+                    android:layout_marginRight="20dp"
                     android:background="?android:attr/selectableItemBackground"
                     android:layout_marginTop="5dp" />
 
+                <ImageButton
+                    android:id="@+id/btnCerrarSesion"
+                    android:layout_width="39dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
             </LinearLayout>
 
-            <SearchView
-                android:id="@+id/Buscador"
-                android:layout_width="410dp"
+            <AutoCompleteTextView
+                android:id="@+id/editTextBuscar"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                app:searchIcon="@null"
-                />
+                android:hint="Buscar aspecto"
+                android:textColor="@color/white"
+                android:textColorHint="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
 
             <TextView
                 android:id="@+id/txtTemp"
@@ -101,6 +104,7 @@
                     android:layout_marginStart="15dp"
                     android:adjustViewBounds="true"
                     android:layout_marginBottom="10dp"
+                    android:contentDescription="Kai'Sa Tinta Sombría"
                     app:srcCompat="@drawable/kaisa" />
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -121,11 +125,13 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ezreal"
                     android:scaleType="centerCrop"
+                    android:contentDescription="Ezreal Gallardo"
                     android:adjustViewBounds="true"/>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="71dp"
                 android:orientation="horizontal">
 
 
@@ -133,36 +139,37 @@
                     android:id="@+id/kaisaTintaSombriatxt"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginStart="15dp"
                     android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
                     android:shadowColor="#000000"
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="1"
-                    android:gravity="center_vertical"
                     android:text="Kai'Sa Tinta Sombría \n-30% 1350 -> 945 RP"
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     app:layout_constraintLeft_toRightOf="@+id/kaisaTintaSombriatxt"
                     app:layout_constraintRight_toLeftOf="@+id/nekoGuardianaEstelartxt"
                     app:layout_constraintTop_toBottomOf="@+id/ezrealImg" />
+
                 <TextView
                     android:id="@+id/ezrealGallardotxt"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginStart="15dp"
                     android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
                     android:shadowColor="#000000"
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="1"
-                    android:gravity="center_vertical"
                     android:text="Ezreal Gallardo\n-45% 750 -> 412 RP"
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
@@ -189,6 +196,7 @@
                     android:layout_marginBottom="10dp"
                     app:srcCompat="@drawable/rakan"
                     android:scaleType="centerCrop"
+                    android:contentDescription="Rakan Pacto Quebrantado"
                     android:adjustViewBounds="true"/>
 
                 <ImageView
@@ -203,6 +211,7 @@
                     app:srcCompat="@drawable/neeko2"
                     android:layout_marginBottom="10dp"
                     android:scaleType="centerCrop"
+                    android:contentDescription="Neeko Guardiana Estelar"
                     android:adjustViewBounds="true"/>
             </LinearLayout>
             <LinearLayout
@@ -234,7 +243,7 @@
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="1"
-                    android:text="Neeko Guardiana estelar\n-60% 1350 -> 540 RP"
+                    android:text="Neeko Guardiana Estelar\n-60% 1350 -> 540 RP"
                     android:maxWidth="180dp"
                     android:layout_marginBottom="15dp"
                     android:layout_marginTop="5dp"
@@ -261,6 +270,7 @@
                     android:scaleType="centerCrop"
                     android:layout_marginStart="15dp"
                     android:layout_marginBottom="10dp"
+                    android:contentDescription="AstroNautilus"
                     android:adjustViewBounds="true"/>
 
                 <ImageView
@@ -274,6 +284,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/anivia"
                     android:scaleType="centerCrop"
+                    android:contentDescription="Anivia Preistórica"
                     android:adjustViewBounds="true"/>
 
             </LinearLayout>
@@ -321,10 +332,10 @@
                     app:layout_constraintWidth_default="wrap"/>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:orientation="horizontal">
 
                 <ImageView
@@ -340,6 +351,7 @@
                     android:scaleType="centerCrop"
                     android:layout_marginStart="15dp"
                     android:layout_marginBottom="10dp"
+                    android:contentDescription="Tahm Kench Master Chef"
                     android:adjustViewBounds="true"/>
 
                 <ImageView
@@ -354,6 +366,7 @@
                     app:srcCompat="@drawable/nun3"
                     android:scaleType="centerCrop"
                     android:layout_marginBottom="10dp"
+                    android:contentDescription="Nunu y Willump Demoledor"
                     android:adjustViewBounds="true"/>
             </LinearLayout>
 
@@ -378,17 +391,18 @@
                     android:layout_marginRight="40dp"
                     android:maxWidth="160dp"
                     />
+
                 <TextView
                     android:id="@+id/nunuyWillumpDemoledortxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
                     android:shadowColor="#000000"
                     android:shadowDx="1"
                     android:shadowDy="1"
                     android:shadowRadius="1"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="32dp"
                     android:text="Nunu y Willump Demoledor\n-15% 750 -> 604 RP"
                     android:textColor="#FFFFFF"
                     android:textSize="18sp" />
@@ -410,6 +424,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/yi"
                     android:scaleType="centerCrop"
+                    android:contentDescription="Maestro Yi PsyOps"
                     android:adjustViewBounds="true"/>
 
                 <ImageView
@@ -423,6 +438,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/jayce"
                     android:scaleType="centerCrop"
+                    android:contentDescription="Jayce Academia de Combate"
                     android:adjustViewBounds="true"/>
             </LinearLayout>
 

@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.net.Uri;
 import android.widget.TextView;
 
-import com.databit.skinslol2.MainActivity;
 
 public class ParcheActivity extends AppCompatActivity {
 
@@ -48,18 +47,13 @@ public class ParcheActivity extends AppCompatActivity {
         });
         TextView txtPagina = findViewById(R.id.txtPagina);
 
-        // Agrega un OnClickListener al TextView
         txtPagina.setOnClickListener(view -> {
-            // Obtén la URL del TextView
             String url = txtPagina.getText().toString();
 
-            // Crea un Intent para abrir la URL en un navegador web
             Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.setData(Uri.parse(url));
 
-            // Verifica si hay aplicaciones que pueden manejar la acción (abrir una URL)
             if (intent.resolveActivity(getPackageManager()) != null) {
-                // Inicia la actividad para abrir la URL
                 startActivity(intent);
             }
         });

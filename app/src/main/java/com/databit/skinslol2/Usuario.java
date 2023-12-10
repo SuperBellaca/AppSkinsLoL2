@@ -1,29 +1,29 @@
-package com.databit.skinslol2.sqlite;
+package com.databit.skinslol2;
 public class Usuario {
-    private int id;
+    private String id;
     private String nombre;
     private String apellido;
     private String correo;
     private String contrasena;
+    private String urlFotoPerfil;
+
     public Usuario() {
     }
 
-    // Constructor con parámetros
-    public Usuario(int id, String nombre, String apellido, String correo, String contrasena) {
+    public Usuario(String id, String nombre, String apellido, String correo, String contrasena, String urlFotoPerfil) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
         this.contrasena = contrasena;
+        this.urlFotoPerfil = urlFotoPerfil;
     }
 
-    // Getters y setters para cada atributo
-
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -57,6 +57,12 @@ public class Usuario {
 
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
+    }
+    public String getUrlFotoPerfil() {
+        return urlFotoPerfil;
+    }
+    public void setUrlFotoPerfil(String urlFotoPerfil) {
+        this.urlFotoPerfil = urlFotoPerfil;
     }
 }
 

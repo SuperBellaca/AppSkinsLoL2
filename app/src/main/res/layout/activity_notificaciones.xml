@@ -6,7 +6,7 @@
     android:id="@+id/nose2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#808080"
+    android:background="@drawable/fondo4"
     tools:context=".NotificacionesActivity">
 
     <ScrollView

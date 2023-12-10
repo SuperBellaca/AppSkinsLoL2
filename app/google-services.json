@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "830866439474",
+    "project_id": "skinslol",
+    "storage_bucket": "skinslol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830866439474:android:a65fbef3e4eb3ed77feb2b",
+        "android_client_info": {
+          "package_name": "com.databit.skinslol2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbwxg6UpFyahnvC_N5rDSCsObsjqtolh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

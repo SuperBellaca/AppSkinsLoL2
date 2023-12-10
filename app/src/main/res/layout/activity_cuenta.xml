@@ -6,7 +6,7 @@
     android:id="@+id/constraintCuenta"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@drawable/fondo2"
     tools:context=".CuentaActivity">
 
     <LinearLayout
@@ -14,6 +14,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="#60000000"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +36,7 @@
             android:hint="Ingrese su nombre"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
-            android:inputType="text"
+            android:inputType="textPersonName"
             android:padding="12dp"
             android:layout_margin="8dp"/>
 
@@ -54,7 +55,7 @@
             android:hint="Ingrese su apellido"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
-            android:inputType="text"
+            android:inputType="textPersonName"
             android:padding="12dp"
             android:layout_margin="8dp"/>
         <TextView
@@ -72,7 +73,7 @@
             android:hint="Ingrese su correo"
             android:textColorHint="#FFFFFF"
             android:textColor="#FFFFFF"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:padding="12dp"
             android:layout_margin="8dp"/>
         <TextView
@@ -90,7 +91,7 @@
             android:hint="Ingrese su contraseña"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:padding="12dp"
             android:layout_margin="8dp"/>
         <Button
@@ -101,6 +102,13 @@
             android:onClick="guardarDatos"
             android:layout_marginTop="16dp"/>
 
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:layout_marginTop="16dp"
+            android:onClick="volverAlLogin"/>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
