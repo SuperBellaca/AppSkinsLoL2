@@ -74,8 +74,7 @@ public class PerfilActivity extends AppCompatActivity {
 
 
     public void actualizarInterfazUsuario(Usuario usuario) {
-        String nombreCompleto = usuario.getNombre() + " " + usuario.getApellido();
-        Nombre.setText("Nombre: " + nombreCompleto);
+        Nombre.setText("Nombre: " + usuario.getNombre());
         Apellido.setText("Apellido: " + usuario.getApellido());
         Correo.setText("Correo: " + usuario.getCorreo());
 
@@ -99,9 +98,8 @@ public class PerfilActivity extends AppCompatActivity {
                         Log.d("PerfilActivity", "Usuario obtenido correctamente: " + usuario.getNombre());
 
                         // Formatear los datos y mostrarlos en los TextView
-                        String nombreCompleto = usuario.getNombre() + " " + usuario.getApellido();
                         Correo.setText("Correo: " + usuario.getCorreo());
-                        Nombre.setText("Nombre: " + nombreCompleto);
+                        Nombre.setText("Nombre: " + usuario.getNombre());
                         Apellido.setText("Apellido: " + usuario.getApellido());
 
                         if (usuario.getUrlFotoPerfil() != null && !usuario.getUrlFotoPerfil().isEmpty()) {
